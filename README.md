@@ -2,7 +2,9 @@
 ### Experimental Computing Architecture Research Initiative  
 **Principal Author:** #ASYTRICK  
 **Repository:** https://github.com/ssmool/HELZING-IONICPC
-
+Version: 1.0 Beta
+Status: Under Development
+Contact: eusmool@gmail.com
 ---
 
 ## Abstract
@@ -100,53 +102,51 @@ Research is exploratory **and not intended for consumer or industrial deployment
 
 If referencing this project in academic work:
 
+'The Personal Computer moves the world, the microinformatic was on so much move so faster like the humanity moves the citizens progress like a community, the power can do it - lets go and let be' - #asytrick
 
 ## System Architecture Diagram (Mermaid):
 
-```mermaid
-flowchart LR
-
-%% Core Signal Origin
-GPU[GPU / Signal Encoder] 
-subgraph UHF_Stage[UHF Resonance Transmission Layer]
-    UHF_GEN[UHF Carrier Generation]
-    UHF_MOD[Waveform Modulator]
-    UHF_AMP[Resonance Amplification]
-end
-
-subgraph IR_Stage[Infrared Optical Carrier Layer]
-    IR_EMIT[IR Beam Emitter]
-    IR_MOD[Amplitude/Phase Modulation]
-    IR_RECV[Optical Sensor Receiver]
-end
-
-subgraph MemoryLayer[Carbon-Substrate Memory]
-    MEM_MATRIX[Carbon Lattice Storage Matrix]
-    MEM_IR_ADDR[IR Address/Keying Control]
-    MEM_STATE[Charge/Resonance State Transition]
-end
-
-subgraph ImagingSystem[Telescopic Optical Subsystem]
-    LENS[Telescope Lens Assembly]
-    OPT_SENSOR[Optical Image Sensor]
-    UHF_SYNC[RF Synchronization Timing]
-end
-
-subgraph Display_Output[Reconstruction / Display Output]
-    SIGNAL_REBUILD[Signal-State Reconstruction]
-    RASTER[Raster / Frame Generator]
-    DISPLAY[Visual Display System]
-end
-
-%% Signal Paths
-GPU --> UHF_GEN --> UHF_MOD --> UHF_AMP --> UHF_SYNC
-GPU --> IR_MOD --> IR_EMIT --> IR_RECV --> MEM_IR_ADDR
-MEM_STATE --> SIGNAL_REBUILD --> RASTER --> DISPLAY
-OPT_SENSOR --> SIGNAL_REBUILD
-MEM_MATRIX <--> MEM_STATE
-UHF_SYNC --> OPT_SENSOR
-
+┌──────────────────────────────────────────────────────────────────┐
+│ GPU SIGNAL ORIGIN │
+│ (Frame / Data / Instruction as spectral-eligible content) │
+└──────────────────────────────────────────────────────────────────┘
+│ │
+│ │
+UHF Transmission Path Infrared Optical Path
+│ │
+┌────────────▼────────────┐ ┌──────▼───────────────┐
+│ UHF Carrier Generation │ │ IR Phase/Amplitude │
+│ + Frequency Modulation │ │ Modulation + Emission │
+└────────────┬────────────┘ └─────────┬────────────┘
+│ │
+Signal Resonance Optical Line-of-Sight
+│ │
+▼ ▼
+┌─────────────────┐ ┌───────────────────────┐
+│ UHF Synchronizer │ │ IR Receiver / Decoder │
+└─────────────────┘ └─────────┬─────────────┘
+│
+│ IR Address Keying
+▼
+┌──────────────────────────┐
+│ CARBONSIDRAMZ MEMORY │
+│ (Charge + Resonance Grid)│
+└─────────┬────────────────┘
+│
+State Shift
+│
+▼
+┌───────────────────────────┐
+│ Signal-State Reconstructor │
+│ (Computational Analysis) │
+└───────┬───────────────────┘
+│
+Rasterization
+│
+▼
+┌───────────────────────────┐
+│ HELLZING Display Output │
+└───────────────────────────┘
 
 
----
 
