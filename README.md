@@ -106,49 +106,45 @@ If referencing this project in academic work:
 
 ## System Architecture Diagram (Mermaid):
 
-┌──────────────────────────────────────────────────────────────────┐
 │ GPU SIGNAL ORIGIN │
 │ (Frame / Data / Instruction as spectral-eligible content) │
 └──────────────────────────────────────────────────────────────────┘
-│ │
-│ │
+
 UHF Transmission Path Infrared Optical Path
-│ │
+
 ┌────────────▼────────────┐ ┌──────▼───────────────┐
+
 │ UHF Carrier Generation │ │ IR Phase/Amplitude │
 │ + Frequency Modulation │ │ Modulation + Emission │
+
 └────────────┬────────────┘ └─────────┬────────────┘
-│ │
+
 Signal Resonance Optical Line-of-Sight
-│ │
+
 ▼ ▼
+
 ┌─────────────────┐ ┌───────────────────────┐
+
 │ UHF Synchronizer │ │ IR Receiver / Decoder │
+
 └─────────────────┘ └─────────┬─────────────┘
-│
+
 │ IR Address Keying
+
 ▼
-┌──────────────────────────┐
+
 │ CARBONSIDRAMZ MEMORY │
 │ (Charge + Resonance Grid)│
-└─────────┬────────────────┘
-│
+
 State Shift
-│
+
 ▼
-┌───────────────────────────┐
+
 │ Signal-State Reconstructor │
 │ (Computational Analysis) │
-└───────┬───────────────────┘
-│
-Rasterization
-│
+
+| Rasterization
+
 ▼
-┌───────────────────────────┐
+
 │ HELLZING Display Output │
-└───────────────────────────┘
-
-
-
-
-
