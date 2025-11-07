@@ -108,46 +108,44 @@ If referencing this project in academic work:
 'The Personal Computer moves the world, the microinformatic was on so much move so faster like the humanity moves the citizens progress like a community, the power can do it - lets go and let be' - #asytrick
 
 ## System Architecture Diagram (Mermaid):
-
+┌──────────────────────────────────────────────────────────────────┐
 │ GPU SIGNAL ORIGIN │
 │ (Frame / Data / Instruction as spectral-eligible content) │
 └──────────────────────────────────────────────────────────────────┘
-
+│ │
+│ │
 UHF Transmission Path Infrared Optical Path
-
+│ │
 ┌────────────▼────────────┐ ┌──────▼───────────────┐
-
 │ UHF Carrier Generation │ │ IR Phase/Amplitude │
 │ + Frequency Modulation │ │ Modulation + Emission │
-
 └────────────┬────────────┘ └─────────┬────────────┘
-
+│ │
 Signal Resonance Optical Line-of-Sight
-
+│ │
 ▼ ▼
-
 ┌─────────────────┐ ┌───────────────────────┐
-
 │ UHF Synchronizer │ │ IR Receiver / Decoder │
-
 └─────────────────┘ └─────────┬─────────────┘
-
+│
 │ IR Address Keying
-
 ▼
-
+┌──────────────────────────┐
 │ CARBONSIDRAMZ MEMORY │
 │ (Charge + Resonance Grid)│
-
+└─────────┬────────────────┘
+│
 State Shift
-
+│
 ▼
-
+┌───────────────────────────┐
 │ Signal-State Reconstructor │
 │ (Computational Analysis) │
-
-| Rasterization
-
+└───────┬───────────────────┘
+│
+Rasterization
+│
 ▼
-
+┌───────────────────────────┐
 │ HELLZING Display Output │
+└───────────────────────────┘
