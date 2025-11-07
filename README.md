@@ -1,3 +1,6 @@
+![Python HELZZING_IONIC_QUANTUM_PC](./assets/HELZZINGIONICPX.gif)
+
+-----
 # HELZING-IONICPC  
 ### Experimental Computing Architecture Research Initiative  
 **Principal Author:** #ASYTRICK  
